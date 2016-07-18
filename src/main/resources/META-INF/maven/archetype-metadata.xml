@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="archetype-gen-demo">
+    <fileSets>
+        <fileSet filtered="true" encoding="UTF-8" packaged="true">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>**/*.**</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/main/resources/config</directory>
+            <includes>
+                <include>**/*.**</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/main/webapp</directory>
+            <includes>
+                <include>**/*.**</include>
+            </includes>
+        </fileSet>
+
+        <fileSet filtered="true" encoding="UTF-8" packaged="true">
+            <directory>src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/test/resources</directory>
+            <includes>
+                <include>**/*.**</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+
+    <requiredPropertites>
+        <requiredProperty key="groupId">
+            <defaultValue>com.zhubajie.oabern</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="artifactId">
+        </requiredProperty>
+        <requiredProperty key="version">
+            <defaultValue>1.0-SNAPSHOT</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="package">
+            <defaultValue>com.zhubajie.oabern</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="property-without-default" />
+        <requiredProperty key="property-with-default" >
+            <defaultValue>property-with-default</defaultValue>
+        </requiredProperty>
+    </requiredPropertites>
+
+</archetype-descriptor>
